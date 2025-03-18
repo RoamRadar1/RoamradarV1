@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(RoamRadarApp());
+}
+
+class RoamRadarApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'RoamRadar',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("RoamRadar")),
+      body: Center(child: Text("Welcome to RoamRadar MVP!")),
+    );
+  }
+}
